@@ -1,0 +1,40 @@
+name: handfab_app
+description: HandFab Smart Glove Hub — Control & Training App
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # BLE
+  flutter_blue_plus: ^1.31.15
+
+  # State management
+  provider: ^6.1.2
+
+  # Charts
+  fl_chart: ^0.68.0
+
+  # Local storage
+  shared_preferences: ^2.2.3
+
+  # Permissions (Bluetooth + Location)
+  permission_handler: ^11.3.1
+
+  # Google Fonts
+  google_fonts: ^6.2.1
+
+  # Utilities
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
