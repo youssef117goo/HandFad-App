@@ -20,10 +20,12 @@ jobs:
           flutter-version: '3.22.0'
           channel: 'stable'
           cache: true
+      - name: Scaffold missing Android files
+        run: flutter create --project-name handfab_app --platforms android .
       - name: Install dependencies
         run: flutter pub get
       - name: Build APK
-        run: flutter build apk --release --no-shrink
+        run: flutter build apk --release
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
